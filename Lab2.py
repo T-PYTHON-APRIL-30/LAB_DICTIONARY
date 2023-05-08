@@ -23,3 +23,16 @@ elif phone_number.isdigit() != True:
     print("This is invalid number")
 else:
     print("Sorry, the number is not found")
+
+# Q2:Write a function that receives a list containing the following numbers :
+'''- [5, 0, 34, 9, 0, 13, 8]
+- rearranges the list so that the zeros are the end of the list, and finally returns the arranged list.'''
+my_list = [5, 0, 34, 9, 0, 13, 8]
+i = 0
+# print(my_list[0],"ll",my_list.index(0),"ll")
+for i in range(0, len(my_list)):
+
+    if my_list[i] == 0:
+        zeros = my_list.pop(i)
+        my_list.append(zeros)
+print(my_list)
