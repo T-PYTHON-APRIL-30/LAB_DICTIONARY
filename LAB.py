@@ -17,5 +17,7 @@ if phone_number in BookNumber:
     print(BookNumber[phone_number])
 if len(phone_number) != 10:
     print("This is invalid number")
+elif phone_number.isdigit()==False:
+    print("This is invalid number")    
 else:
     print("Sorry, the number is not found")
