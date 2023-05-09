@@ -21,7 +21,7 @@ def check_owner(number:str):
         print("this is more or less than 10 digits")
 
     
-    if number.isnumeric != True:
+    if number.isnumeric() != True:
         print("this is invalid number")
 
 check_owner(input("Enter a number to find the owner:"))
